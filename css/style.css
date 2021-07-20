@@ -1,0 +1,186 @@
+/*--------------ANIMACIONES-----------------*/
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    } 
+/*-------------------------------------------*/
+
+
+body{
+    background-color:#0d6efd;
+}
+.divCentrado{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.imgBienvenido{
+    height: 100%;
+    width: 100%;
+}
+.bienvenido{
+    font-family: 'Otomanopee One', sans-serif;
+    -webkit-text-stroke: 2px white;
+    color: black; 
+    margin-left: 3%;
+    text-align: center;
+    align-items: center;
+    margin-top: 15%;
+}
+.bienvenidoText{
+    font-size: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#cajacookies {
+    box-shadow: 0px 0px 5px 5px #808080;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+#cajacookies button {
+    color: black;
+}
+.pCookies{
+    color: black;
+}
+
+.tituloCentrado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#212529
+}
+.titulo{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 2px white;
+    color: black; 
+    text-decoration: none;
+}
+.titulo:hover{
+    color: rgb(54, 54, 54);
+}
+.subtitulo{
+    font-family: 'Otomanopee One', sans-serif;
+    -webkit-text-stroke: 2px white;
+    color: black; 
+    margin-left: 3%;
+    text-align: center;
+    align-items: center;
+}
+.fontDatos, p , 
+#perfilAlumnoH2, #mensaje, #mensaje2,
+#mensaje3{
+    color: white;
+    margin-left: 3%;
+}
+.botones{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.botonesCentrados{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+	background: orange;
+	width: 95px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 1px #000;
+	display: inline-block;
+}
+
+.botonesCentrados:hover{
+    opacity: .9;
+}
+.divTrabaja{
+    width: 100%;
+}
+.imgTrabaja{
+    width: 100%;
+}
+#cajaNotas{
+	width: 100%;
+	margin: auto;
+	height: 0px;
+	box-shadow: 10px 10px 3px black;
+	transition: height .4s;
+    display: flex;
+}
+#cajaNotasForm{
+    text-align: center;
+    align-items: center;
+}
+#cajaAlumno{
+    width: 25vh;
+	margin: auto;
+	height: 0px;
+	box-shadow: 10px 10px 3px black;
+	transition: height .4s;
+}
+#mensaje2{
+    font-size: 15px;
+}
+.divFormContacto{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.formCentrado{
+    margin-left: 33%;
+    margin-right: 33%;
+    width: 30%;
+}
+/*----------MEDIA QUERIES----------*/
+@media screen and (max-width:768px){
+    .bienvenidoText{
+        font-size: 90px;
+    }
+}
+@media screen and (max-width:480px){
+    .bienvenidoText{
+        font-size: 70px;
+    }
+}
+/*----------------------------------*/
