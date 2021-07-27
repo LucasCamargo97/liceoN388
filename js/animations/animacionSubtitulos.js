@@ -1,0 +1,1 @@
+$('.subtitulo').hide('fast').show('fast');

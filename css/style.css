@@ -29,9 +29,20 @@
     } 
 /*-------------------------------------------*/
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color:#0d6efd;
+}
+header{
+    position: fixed; 
+    z-index: 12;
+    width: 100%;
+}
+.navbar-nav{
+    margin: auto;
 }
 .divCentrado{
     position: relative;
@@ -48,10 +59,12 @@ body{
     font-family: 'Otomanopee One', sans-serif;
     -webkit-text-stroke: 2px white;
     color: black; 
-    margin-left: 3%;
     text-align: center;
     align-items: center;
-    margin-top: 15%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    margin-top: 12%;
 }
 .bienvenidoText{
     font-size: 150px;
@@ -133,12 +146,22 @@ body{
 .botonesCentrados:hover{
     opacity: .9;
 }
+#formTrabaja{
+    background-image: url("../media/trabajaConNosotros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+}
+.divTrabaja1{
+    text-align: center;
+    align-items: center
+}
 .divTrabaja{
     width: 100%;
 }
-.imgTrabaja{
-    width: 100%;
-}
+
 #cajaNotas{
 	width: 100%;
 	margin: auto;
