@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto | LICEO N° 388</title>
 </head>
 <body>
@@ -63,61 +63,85 @@
             <h1 class="subtitulo" >CONTACTO</h1>
         </div>
         <div class="divFormContacto">
-            <form  class="formCentrado" id="contacto" action=>
+            <form  class="formCentrado needs-validation" id="contacto" novalidate>
                 <div class="form-group">
-                    <label for="nombreUsuario"><strong>Nombre:</strong></label>
-                    <input id="nombreContacto" type="text" placeholder="Ingrese su nombre" class="form-control" id="nombreUsuario">
+                    <div class="position-relative">
+                        <label for="nombreUsuario"><strong>Nombre:</strong></label>
+                        <input id="nombreContacto" type="text" placeholder="Ingrese su nombre" class="form-control" required>
+                        <div class="valid-tooltip">Correcto!</div>
+                        <div class="invalid-tooltip">Complete los datos!</div>
+                    </div>
+                    <div class="position-relative">
+                        <label for="Apellido"><strong>Apellido:</strong></label>
+                        <input id="apellidoContacto" type="text" placeholder="Ingrese su apellido" class="form-control" required>
+                        <div class="valid-tooltip">Correcto!</div>
+                        <div class="invalid-tooltip">Complete los datos!</div>
+                    </div>
                     <br>
-                    <label for="Apellido"><strong>Apellido:</strong></label>
-                    <input id="apellidoContacto" type="text" placeholder="Ingrese su apellido" class="form-control" id="Apellido">
+                    <div class="position-relative">
+                        <label for="Celular"><strong>Celular:</strong></label>
+                        <input id="celularContacto" type="number" placeholder="Ingrese su celular" class="form-control" required>
+                        <div class="valid-tooltip">Correcto!</div>
+                        <div class="invalid-tooltip">Complete los datos!</div>
+                    </div>
                     <br>
-                    <label for="Celular"><strong>Celular:</strong></label>
-                    <input id="celularContacto" type="number" placeholder="Ingrese su celular" class="form-control" id="Celular">
                     <br>
-                    <label for="Edad"><strong>Edad:</strong></label>
-                    <input id="edadContacto" type="number" class="form-control" id="Edad">
+                    <div class="position-relative">
+                        <label for="Edad"><strong>Edad:</strong></label>
+                        <input id="edadContacto" type="number" class="form-control" required>
+                        <div class="valid-tooltip">Correcto!</div>
+                        <div class="invalid-tooltip">Complete los datos!</div>
+                    </div>
                     <br>
                 </div>
                     <fieldset>
-                        <legend><strong>Departamento:</strong></legend>
-                        <select id="departamentoContacto" name="" id="">
-                            <option value="Artigas">Artigas</option>
-                            <option value="Canelones">Canelones</option>
-                            <option value="Cerro Largo">Cerro Largo</option>
-                            <option value="Colonia">Colonia</option>
-                            <option value="Durazno">Durazno</option>
-                            <option value="Flores">Flores</option>
-                            <option value="Florida">Florida</option>
-                            <option value="Lavalleja">Lavalleja</option>
-                            <option value="Maldonado">Maldonado</option>
-                            <option value="Montevideo">Montevideo</option>
-                            <option value="Paysandú">Paysandú</option>
-                            <option value="Río Negro">Río Negro</option>
-                            <option value="Rivera">Rivera</option>
-                            <option value="Rocha">Rocha</option>
-                            <option value="Salto">Salto</option>
-                            <option value="San José">San José</option>
-                            <option value="Soriano">Soriano</option>
-                            <option value="Tacuarembó">Tacuarembó</option>
-                            <option value="Treinta y Tres">Treinta y Tres</option>
-                        </select>
+                        <div class="position-relative">
+                            <legend><strong>Departamento:</strong></legend>
+                                <select id="departamentoContacto" class="form-select" name="" required>
+                                    <option selected disabled value="">Seleccione</option>
+                                    <option value="Artigas">Artigas</option>
+                                    <option value="Canelones">Canelones</option>
+                                    <option value="Cerro Largo">Cerro Largo</option>
+                                    <option value="Colonia">Colonia</option>
+                                    <option value="Durazno">Durazno</option>
+                                    <option value="Flores">Flores</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Lavalleja">Lavalleja</option>
+                                    <option value="Maldonado">Maldonado</option>
+                                    <option value="Montevideo">Montevideo</option>
+                                    <option value="Paysandú">Paysandú</option>
+                                    <option value="Río Negro">Río Negro</option>
+                                    <option value="Rivera">Rivera</option>
+                                    <option value="Rocha">Rocha</option>
+                                    <option value="Salto">Salto</option>
+                                    <option value="San José">San José</option>
+                                    <option value="Soriano">Soriano</option>
+                                    <option value="Tacuarembó">Tacuarembó</option>
+                                    <option value="Treinta y Tres">Treinta y Tres</option>
+                                </select>
+                            <div class="valid-tooltip">Correcto!</div>
+                            <div class="invalid-tooltip">Complete los datos!</div>
+                        </div>
                     </fieldset>
                 <div>
                     <h4>Sexo:<h4>
                     <label for="Masculino">Masculino</label>
-                    <input value="Masculino" type="radio" name="sexo" id="masculino">
+                    <input value="Masculino" type="radio" name="sexo" id="masculino" required>
                     <label value="Femenino" for="Femenino">Femenino</label>
-                    <input type="radio" name="sexo" id="femenino">
+                    <input type="radio" name="sexo" id="femenino" required>
                 </div>
-                    <br>
+                <br>
+                <div>
                     <label for="Dejanos tu comentario: "><strong>Dejanos tu comentario:</strong></label>
-                    <textarea name="" id="mensajee" cols="80" rows="10" id="Dejanos tu comentario:">
-                        </textarea>
-                        <h4>¿Acepta que utilicemos su información para ingresarla a nuestra base de datos y contactarlo?</h4>
-                        <input id="acepta" class="form-check-input" type="checkbox" name="Acepta" value="1"/>
-                        <br>
-                    <button class="btn btn-dark" type="button" onclick="cargarFormContacto();">Enviar</button>
-                    <input class="btn btn-dark" type="reset">
+                    <textarea name="" id="mensajee" cols="80" rows="10" id="Dejanos tu comentario:"></textarea>
+                </div>
+                <div>
+                    <h4>¿Acepta que utilicemos su información para ingresarla a nuestra base de datos y contactarlo?</h4>
+                    <input id="acepta" class="form-check-input" type="checkbox" name="Acepta" value="si acepta"/>
+                </div>
+                <br>
+                <button class="btn btn-dark" id="enviar" type="submit" onclick="cargarFormContacto();">Enviar</button>
+                <input class="btn btn-dark" type="reset">
             </form>
         </div>
     </main>
@@ -128,7 +152,6 @@
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="../js/animations/animacionSubtitulos.js"></script>
     <script src="../js/functions/contacto.js"></script>
 </body>
 </html>

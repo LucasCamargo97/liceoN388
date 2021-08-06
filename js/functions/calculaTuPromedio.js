@@ -20,14 +20,16 @@ function generarPromedio(){
     var Nota8 = parseInt(document.getElementById('nota8').value); //literatura
     var Nota9 = parseInt(document.getElementById('nota9').value); //ingles
     var Promedio = (Nota1 + Nota2 + Nota3 + Nota4 + Nota5 + Nota6 + Nota7 + Nota8 + Nota9) / 9
+    if(Promedio === NaN){
+    document.getElementById('mensaje').innerHTML = "Por favor ingrese bien sus notas"
+    }
     if(Promedio<6){
     document.getElementById('mensaje').innerHTML = `Lo sentimos, ha desaprobado, su promedio es de ${Promedio.toFixed(1)}`
-    }else {
-    document.getElementById('mensaje').innerHTML = `Felicitaciones, ha aprobado, su promedio es de ${Promedio.toFixed(1)}`
     }
     let profesores = [' Andres', ' Juan', ' Andrea', ' Mariana', ' Julio', ' Elizabeth']
     var profesoresOrdenados = profesores.sort()
     if(Promedio>6){
+    document.getElementById('mensaje').innerHTML = `Felicitaciones, ha aprobado, su promedio es de ${Promedio.toFixed(1)}`
     document.getElementById('mensaje2').innerHTML = `Reciba las felicitaciones de los profesores: ${profesoresOrdenados}`
     }
     $("#mensaje3").append(document.createTextNode("Liceo N° 388"));
