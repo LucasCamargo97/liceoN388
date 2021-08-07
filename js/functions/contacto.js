@@ -7,7 +7,7 @@ var sexo;
 var info;
 var mensajee;
 let contactoArray = []
-
+/*toma los datos del contacto y los guarda en un array*/
 function cargarFormContacto(){
     var nombre = document.getElementById('nombreContacto').value;
     var apellido = document.getElementById('apellidoContacto').value;
@@ -38,7 +38,7 @@ function Contacto (nombre,apellido,edad,celular,departamento,sexo,mensajee,info)
         }
     }
 
-
+/*validacion del form*/
 (function () {
     'use strict'
 

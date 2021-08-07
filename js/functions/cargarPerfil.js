@@ -4,7 +4,7 @@ var edad;
 var email;
 var ci;
 let alumnoArray = []
-
+/*Toma los datos para generar el perfil y ademas los guarda en un array*/
 function cargarDatos(){
     var nombre = document.getElementById('nombre').value;
     var apellido = document.getElementById('apellido').value;
@@ -34,7 +34,7 @@ function Alumno (nombre,apellido,edad,email,ci) {
             console.log(alumnoArray);
         }
     }
-
+/*validacion del form*/
     (function () {
         'use strict'
     

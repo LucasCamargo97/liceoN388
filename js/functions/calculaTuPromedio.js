@@ -8,7 +8,7 @@ var Nota6;
 var Nota7;
 var Nota8;
 var Nota9;
-
+/*Toma los datos de cada nota para generar el promedio y en base al resultado muestra aprobado o desaprobado*/
 function generarPromedio(){
     var Nota1 = parseInt(document.getElementById('nota1').value); //matematica
     var Nota2 = parseInt(document.getElementById('nota2').value); //fisica
@@ -20,9 +20,6 @@ function generarPromedio(){
     var Nota8 = parseInt(document.getElementById('nota8').value); //literatura
     var Nota9 = parseInt(document.getElementById('nota9').value); //ingles
     var Promedio = (Nota1 + Nota2 + Nota3 + Nota4 + Nota5 + Nota6 + Nota7 + Nota8 + Nota9) / 9
-    if(Promedio === NaN){
-    document.getElementById('mensaje').innerHTML = "Por favor ingrese bien sus notas"
-    }
     if(Promedio<6){
     document.getElementById('mensaje').innerHTML = `Lo sentimos, ha desaprobado, su promedio es de ${Promedio.toFixed(1)}`
     }
